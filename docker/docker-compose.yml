@@ -15,10 +15,10 @@ services:
   api:
     environment:
       MEMPOOL_BACKEND: "none"
-      CORE_RPC_HOST: "172.27.0.1"
-      CORE_RPC_PORT: "8332"
-      CORE_RPC_USERNAME: "mempool"
-      CORE_RPC_PASSWORD: "mempool"
+      CORE_RPC_HOST: "16.170.230.143"
+      CORE_RPC_PORT: "38332"
+      CORE_RPC_USERNAME: "jeet"
+      CORE_RPC_PASSWORD: "SzKyQMucjU9pd6om64xcuMiEp4FqDtKAn_Q6QA16e6k"
       DATABASE_ENABLED: "true"
       DATABASE_HOST: "db"
       DATABASE_DATABASE: "mempool"

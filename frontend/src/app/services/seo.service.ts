@@ -9,9 +9,9 @@ import { StateService } from './state.service';
 })
 export class SeoService {
   network = '';
-  baseTitle = 'mempool';
-  baseDescription = 'Explore the full Bitcoin ecosystem&reg; with The Mempool Open Source Project&reg;.';
-  baseDomain = 'mempool.space';
+  baseTitle = 'LayerEdge';
+  baseDescription = 'Explore the LayerEdge Bitcoin signet';
+  baseDomain = 'explorer.layeredge.io';
 
   canonicalLink: HTMLLinkElement = document.getElementById('canonical') as HTMLLinkElement;
 
@@ -97,7 +97,7 @@ export class SeoService {
       return this.baseTitle + ' - Liquid Network';
     if (this.network === 'liquidtestnet')
       return this.baseTitle + ' - Liquid Testnet';
-    return this.baseTitle + ' - ' + (this.network ? this.ucfirst(this.network) : 'Bitcoin') + ' Explorer';
+    return this.baseTitle + ' - ' + (this.network ? this.ucfirst(this.network) : 'Bitcoin Signet') + ' Explorer';
   }
 
   getDescription(): string {
